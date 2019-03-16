@@ -1,0 +1,32 @@
+@import "cmd_line";
+
+$bg_colour: rgb(69, 105, 135);
+$fg_colour: white;
+
+.main-header {
+    width: 100%;
+    background-color: $bg_colour;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-titles {
+    padding: 64px 0px;
+}
+
+.header-titles,
+.header-titles h1 a:visited {
+    align-self: center;
+    color: $fg_colour;
+    padding: 64px 0px;
+}
+
+.main-header h1 {
+    font-size: 64px;
+}
+
+.main-header h2 {
+    font-size: 30px;
+}

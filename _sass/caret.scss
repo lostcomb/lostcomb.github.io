@@ -1,0 +1,31 @@
+$fg_colour: black;
+$bg_colour: white;
+
+pre.caret {
+    color: $fg_colour;
+    position: absolute;
+    background-color: $bg_colour;
+    opacity: 0;
+    overflow: hidden;
+    line-height: 64px;
+    animation: blink 1s steps(2, start) infinite;
+    border-radius: 0px;
+    padding: 0px;
+}
+
+pre.caret.paused {
+    animation-iteration-count: 1;
+}
+
+pre.caret.visible {
+    opacity: 1;
+}
+
+@keyframes blink {
+    from {
+        visibility: visible;
+    }
+    to {
+        visibility: hidden;
+    }
+}

@@ -12,15 +12,12 @@ $fg_colour: white;
     flex-direction: column;
 }
 
-.header-titles {
-    padding: 64px 0px;
-}
-
 .header-titles,
 .header-titles h1 a:visited {
+    $padding: if($page_layout == "home", 64px, 32px);
     align-self: center;
     color: $fg_colour;
-    padding: 64px 0px;
+    padding: $padding 0px;
 }
 
 .main-header h1 {

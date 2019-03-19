@@ -16,13 +16,23 @@ layout: default
         {%- for post in category.items -%}
         {%- assign post_url = post.url | relative_url -%}
           <div>
-            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
             <h3>
               <a class="post-link" href="{{ post_url }}">
                 {{ post.title | escape }}
               </a>
             </h3>
+            <p class="post-meta">
+              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+              <span>{{ post.date | date: date_format }} </span>
+              {%- if post.github_url -%}
+                • <a class="github-url" href="https://github.com/{{ post.github_url }}">
+                  <svg class="svg-icon">
+                    <use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use>
+                  </svg>
+                  <span class="username">GitHub</span>
+                </a>
+              {%- endif -%}
+            </p>
             {{ post.excerpt }}
             {%- if post.small_image -%}
               <img src="{{ 'assets/images/' | append: post.small_image | relative_url }}">

@@ -1,6 +1,7 @@
 ---
 category: programming
 small_image: processor_simulator/main.png
+github_url: lostcomb/Processor-Simulator
 ---
 Made as part of an advanced computer architecture course. The simulator is written in Haskell. The simulated processor architecture is intended to be similar to the Intel Nehalem architecture. The features implemented include:
 

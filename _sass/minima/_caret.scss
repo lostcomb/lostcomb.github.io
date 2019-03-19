@@ -1,10 +1,7 @@
-$fg_colour: black;
-$bg_colour: white;
-
 pre.caret {
-    color: $fg_colour;
+    color: $text-color;
     position: absolute;
-    background-color: $bg_colour;
+    background-color: $background-color;
     opacity: 0;
     overflow: hidden;
     line-height: 64px;

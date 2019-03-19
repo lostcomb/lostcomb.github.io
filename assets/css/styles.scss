@@ -1,10 +1,6 @@
 ---
 ---
-$github_username: "{{ site.github_username }}";
-$page_layout: "{{ page.layout }}";
+$github-username: "{{ site.github_username }}";
 
-@import "https://fonts.googleapis.com/css?family=Quicksand:400,700|Inconsolata";
 @import "minima";
-@import "header";
-@import "home";
-@import "footer";
+@import "settings";

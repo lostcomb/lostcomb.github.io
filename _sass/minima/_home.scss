@@ -1,21 +1,18 @@
-$span_colour: rgb(138, 138, 138);
-$bg_colour: rgb(243, 243, 243);
-
 .post-container {
     column-count: 3;
     -moz-column-count: 3;
-    column-gap: 32px;
-    -moz-column-gap: 32px;
+    column-gap: 16px;
+    -moz-column-gap: 16px;
 }
 
-@media (max-width: 856px) {
+@include media-query($on-laptop) {
     .post-container {
         column-count: 2;
         -moz-column-count: 2;
     }
 }
 
-@media (max-width: 556px) {
+@include media-query($on-palm) {
     .post-container {
         column-count: 1;
         -moz-column-count: 1;
@@ -25,8 +22,8 @@ $bg_colour: rgb(243, 243, 243);
 .post-container::before {
     content: attr(title);
     display: block;
-    color: $span_colour;
-    border-bottom: solid 2px $span_colour;
+    color: $grey-color;
+    border-bottom: solid 2px $grey-color;
     padding: 8px 0px;
     margin: 8px;
     font-size: 24px;
@@ -44,5 +41,5 @@ $bg_colour: rgb(243, 243, 243);
 }
 
 .post-container > div:hover {
-    background-color: $bg_colour;
+    background-color: $grey-color-light;
 }

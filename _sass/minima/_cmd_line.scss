@@ -1,22 +1,15 @@
 @import "caret";
 
-$bg_colour: rgb(42, 63, 81);
-$bg_colour_highlight: rgb(49, 74, 95);
-$secondary_bg_colour: rgb(34, 52, 67);
-$fg_colour: white;
-$fg_colour_insensitive: rgb(138, 138, 138);
-$transparent: rgba(0, 0, 0, 0);
-
 .cmd-line {
     width: 100%;
     height: 64px;
     display: flex;
     font-family: 'Inconsolata', monospace;
-    background-color: $bg_colour;
+    background-color: $brand-color-dark;
 }
 
 .cmd-line:hover {
-    background-color: $bg_colour_highlight;
+    background-color: $brand-color-highlight;
 }
 
 .cmd-line .wrapper {
@@ -35,7 +28,8 @@ $transparent: rgba(0, 0, 0, 0);
 }
 
 .cmd-line h5 {
-    color: $fg_colour_insensitive;
+    color: $grey-color-lighter;
+    padding-left: 8px;
 }
 
 .cmd-line input {
@@ -44,20 +38,21 @@ $transparent: rgba(0, 0, 0, 0);
     margin-inline-start: 8px;
     color: $transparent;
     background-color: $transparent;
-    text-shadow: 0px 0px 0px $fg_colour;
+    text-shadow: 0px 0px 0px $background-color;
+    padding-right: 8px;
 }
 
 #cmd-output-cont {
     width: 100%;
     display: flex;
-    background-color: $secondary_bg_colour;
+    background-color: $brand-color-darker;
 }
 
 #cmd-output {
     flex: 1;
     font-family: 'Inconsolata', monospace;
     font-size: 24px;
-    background-color: $secondary_bg_colour;
+    background-color: $brand-color-darker;
     overflow-y: scroll;
     list-style: none;
     max-height: 200px;
@@ -68,7 +63,7 @@ $transparent: rgba(0, 0, 0, 0);
 }
 
 #cmd-output > div {
-    color: $fg_colour;
+    color: $background-color;
     display: list-item;
     position: relative;
     padding: 4px;
@@ -78,12 +73,11 @@ $transparent: rgba(0, 0, 0, 0);
 }
 
 #cmd-output > div:before {
-    content: $github_username + ".$";
-    padding: 4px 20px 4px 0px;
+    padding: 4px 20px 4px 8px;
     position: absolute;
     top: 0px;
     left: 0px;
-    color: $fg_colour_insensitive;
+    color: $grey-color-lighter;
 }
 
 #cmd-output > div h5 {

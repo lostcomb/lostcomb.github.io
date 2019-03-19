@@ -1,9 +1,7 @@
 <header class="main-header">
     <div class="header-titles">
         <h1><a rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a></h1>
-        {%- if page.layout == 'home' -%}
         <h2>{{ site.sub_title }}</h2>
-        {%- endif -%}
     </div>
 
     {%- include cmd_line.html -%}

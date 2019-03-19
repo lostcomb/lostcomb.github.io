@@ -1,5 +1,6 @@
 ---
 category: programming
+small_image: rasterizer/main.jpg
 ---
 Made as part of a computer graphics course. The features implemented include:
 
@@ -12,3 +13,5 @@ Made as part of a computer graphics course. The features implemented include:
 * Arbitrary model import using .obj files with support for .mtl files.
 
 I worked on this alongside <a href="http://smithy.productions/"> Rory Smith</a>.
+
+![Rasterizer]({{ '/assets/images/rasterizer/main.jpg' | relative_url }})

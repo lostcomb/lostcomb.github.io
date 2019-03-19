@@ -1,5 +1,6 @@
 ---
 category: programming
+small_image: processor_simulator/main.png
 ---
 Made as part of an advanced computer architecture course. The simulator is written in Haskell. The simulated processor architecture is intended to be similar to the Intel Nehalem architecture. The features implemented include:
 
@@ -19,3 +20,5 @@ Made as part of an advanced computer architecture course. The simulator is writt
 * Execution unit result bypassing.
 * Register renaming via Tomasulo's algorithm.
 * Fixed branch prediction (always not taken) and dynamic branch prediction (2-bit saturating counter, two-level adaptive).
+
+![Processor architecture diagram]({{ '/assets/images/processor_simulator/main.png' | relative_url }})

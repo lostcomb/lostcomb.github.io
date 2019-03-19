@@ -1,5 +1,6 @@
 ---
 category: programming
+small_image: operating_system/small.png
 ---
 Made as part of a concurrent computing course. The features implemented include:
 
@@ -11,3 +12,5 @@ Made as part of a concurrent computing course. The features implemented include:
 * Priority scheduling, i.e.give priority to processes available to execute, never schedule processes waiting for I/O until they are ready.
 * Sleeping the processor when there aren't any processes available to execute.
 * Small graphics library and very simple window manager.
+
+![Operating System]({{ '/assets/images/operating_system/main.png' | relative_url }})

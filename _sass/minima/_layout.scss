@@ -10,19 +10,30 @@
   flex-direction: column;
 }
 
-.header-titles,
-.header-titles h1 a:visited {
+.header-titles {
   align-self: center;
   color: $background-color;
-  padding: 32px;
+  padding: $spacing-unit 0px;
+}
+
+.header-titles h1 a {
+  color: $background-color !important;
 }
 
 .main-header h1 {
-  font-size: 64px;
+  @include relative-font-size(4.0);
+
+  @include media-query($on-palm) {
+    @include relative-font-size(2.0);
+  }
 }
 
 .main-header h2 {
-  font-size: 30px;
+  @include relative-font-size(2.0);
+
+  @include media-query($on-palm) {
+    @include relative-font-size(1.2);
+  }
 }
 
 
@@ -52,6 +63,7 @@
   margin-left: -$spacing-unit / 2;
   @extend %clearfix;
   display: inline-flex;
+  flex-wrap: wrap;
 }
 
 .footer-col {

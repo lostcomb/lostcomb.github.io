@@ -22,7 +22,7 @@ linkedin_username: julian-loscombe-ab4385a8
 
 markdown: kramdown
 theme: minima
-plugins:
+plugins_dir:
   - jekyll-feed
 
 defaults:
